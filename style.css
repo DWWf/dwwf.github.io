@@ -162,3 +162,89 @@ body {
     opacity: 1;
   }
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.queue-modal {
+  padding: 14px;
+  background: #49526a;
+  position: relative;
+  display: grid;
+  grid-template-columns: 115px 100%;
+  grid-gap: 25px;
+  grid-template-areas: "competitive-icon queue-meta";
+  position: fixed;
+  max-width: 500px;
+  width: 100%;
+  left: 50%;
+  transform: scale(0.7) translateX(-50%);
+}
+
+.queue-icon-container {
+  grid-area: competitive-icon;
+  position: relative;
+  align-self: self-start;
+  justify-self: self-start;
+  height: 100%;
+  padding-right: 15px;
+}
+.queue-icon-container:after {
+  content: '';
+  width: 5px;
+  min-height: 50px;
+  height: calc(100% - 15px);
+  display: block;
+  background-color: #feafc7;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.queue-icon {
+  width: 100px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.queue-meta-container {
+  grid-area: queue-meta;
+  align-self: self-start;
+  justify-self: self-start;
+}
+
+.queue-meta {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI";
+  display: grid;
+  grid-template-areas: "text1 text1" "text2 loader" "text3 text3";
+}
+.queue-meta h1, .queue-meta h2 {
+  margin: 0;
+}
+.queue-meta h2:nth-of-type(1) {
+  color: #b100fe;
+  grid-area: text1;
+}
+.queue-meta h1:nth-of-type(1) {
+  color: #fff;
+  display: inline-block;
+  grid-area: text2;
+}
+.queue-meta h2:nth-of-type(2) {
+  color: #9fc4ce;
+  width: 100%;
+  display: block;
+  grid-area: text3;
+}
+
+.loading {
+  position: relative;
+  top: 13px;
+  grid-area: loader;
+}
+
+.hexagons {
+  transform: scale(0.18);
+}
