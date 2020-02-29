@@ -130,6 +130,17 @@ body {
 	@media (max-width:500px) {
 		ul {
 			display: none;
+			display: block;
+    	position: fixed;
+    	width: 100%;
+    	left: 0;
+    	top: 84px;
+    	background: black;
+    	z-index: 10;
+		}
+		a {
+			display: block;
+			text-align: center;
 		}
 	}
 	ul {

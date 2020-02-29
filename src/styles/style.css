@@ -129,6 +129,17 @@ body {
 @media (max-width: 500px) {
   .navigation-menu ul {
     display: none;
+    display: block;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 84px;
+    background: black;
+    z-index: 10;
+  }
+  .navigation-menu a {
+    display: block;
+    text-align: center;
   }
 }
 .navigation-menu ul {
