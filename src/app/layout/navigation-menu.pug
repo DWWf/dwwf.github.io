@@ -1,15 +1,21 @@
 //- Navigation Layout
 .navigation-bar
-  .center-logo
-    .logo-wrapper
-      a(href="javascript:void(0)")
-        //-img(src="https://i.imgur.com/xWRkqvD.png", alt="brand-logo").brand-logo
-        img(src="https://i.imgur.com/Ayc1sw1.png", alt="").brand-logo
-  .navigation-menu
-    ul
-      a(href="javascript:void(0)")
-        li Work
-      a(href="javascript:void(0)")
-        li Home
-      a(href="javascript:void(0)")
-        li Contact
+  .container.nav-grid
+    .center-logo
+      .logo-wrapper
+        a(href="javascript:void(0)")
+          //-img(src="https://i.imgur.com/xWRkqvD.png", alt="brand-logo").brand-logo
+          img(src="https://i.imgur.com/Ayc1sw1.png", alt="").brand-logo
+    .navigation-menu
+      a(href="javascript:void(0)").nav-button
+        div.menu-icon
+          div.line
+          div.line
+          div.line
+      ul.nav-list
+        a(href="javascript:void(0)")
+          li Work
+        a(href="javascript:void(0)")
+          li Home
+        a(href="javascript:void(0)")
+          li Contact
